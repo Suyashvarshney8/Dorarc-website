@@ -1,0 +1,27 @@
+#details-heading {
+    margin-top: 6rem;
+}
+
+#single-container {
+    width: 90%;
+    margin-left: 12%;
+
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#single-container>.flex-item>img {
+    
+    
+    width: 70rem;
+    height: 70rem;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 3px #9d174d;
+    padding: 1rem;
+    object-fit: contain;
+    margin-top: 100px
+}
+

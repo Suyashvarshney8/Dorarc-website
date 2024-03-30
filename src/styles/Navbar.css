@@ -1,0 +1,282 @@
+/* #navbar-container {
+    background-color: #d2af13;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+}
+
+#navbar-container>#icon {
+    color: white;
+    font-size: 2.5rem;
+    padding: 0.4rem 1.8rem;
+}
+
+#navbar-container>#icon>#icon-in-div:hover {
+    cursor: pointer;
+}
+
+#navbar-container>#hand-bag {
+    color: white;
+    font-size: 2rem;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-left: 400px;
+}
+
+#dropdown {
+    
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #d2af13;
+    color: white;
+    font-size: 1.2rem;
+    border: solid;
+    cursor: pointer;
+    margin-left: 110px;
+    border-radius: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d2af13;
+    border: solid;
+    border-radius: 20px;
+    border-color: rgb(246, 242, 242);
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 110px;
+    margin-top: 2px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    border: solid;
+    border-color: #d2af13;
+      background-color: #d2af13;
+    border-radius: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+#dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#about-link {
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 70px;
+    
+}
+
+#about-link a {
+    color: white;
+    text-decoration: none;
+}
+
+#number-of-products {
+ 
+    color: white;
+    font-size: 1.2rem;
+    margin-left: -20px;
+    margin-top: 30px;
+}
+
+#logo {
+    height: 80%;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+} */
+
+#navbar-container {
+    background-color: #d2af13;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Add this to evenly distribute items */
+    padding: 0 10px; /* Add padding to give space around items */
+}
+
+/* Styling for the logo */
+#logo {
+    height: 80%;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* Styling for the hand-bag icon */
+#navbar-container>#bag-products-container>#hand-bag {
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 0px;
+}
+
+
+/* Styling for the dropdown menu */
+#dropdown {
+    display: inline-block;
+}
+
+/* Styling for the dropdown button */
+.dropbtn {
+    background-color: #d2af13;
+    color: white;
+    font-size: 1.2rem;
+    border: solid;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 25px;
+
+    /* padding: 0px 10px 0px 10px;  */
+}
+
+.dropbtn1 {
+    display: none;
+
+    /* padding: 0px 10px 0px 10px;  */
+}
+
+/* Styling for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d2af13;
+    border: solid;
+    border-radius: 20px;
+    border-color: rgb(246, 242, 242);
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    margin-top: 2px;
+}
+
+/* Styling for the links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    border: solid;
+    border-color: #d2af13;
+    background-color: #d2af13;
+    border-radius: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Display dropdown content on hover */
+#dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Styling for about link */
+#about-link {
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/* Styling for links inside about link */
+#about-link a {
+    color: white;
+    text-decoration: none;
+}
+
+#bag-products-container {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 20px
+}
+
+/* Styling for number of products */
+#number-of-products {
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 0px;
+    margin-top: 30px; /* Adjust margin between bag icon and quantity */
+}
+.sidebar-button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20px;
+}
+
+.sidebar--button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20px;
+    color: black;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+@media only screen and (max-width: 800px) {
+    /* Hide links with about-link class */
+    #about-link {
+        display: none;
+    }
+
+    .dropbtn {
+        background-color: #d2af13;
+        color: white;
+        font-size: 1.2rem;
+        border: solid;
+        cursor: pointer;
+        border-radius: 20px;
+        margin-right: 120px;
+        margin-left: 25px;
+    
+        /* padding: 0px 10px 0px 10px;  */
+    }
+
+    #logo {
+        height: 80%;
+        margin-left: 30px;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+    .dropbtn1 {
+        background-color: #d2af13;
+        color: white;
+        font-size: 2.5rem;
+        cursor: pointer;
+      
+        margin-left: 25px;
+        display: block;
+    
+        /* padding: 0px 10px 0px 10px;  */
+    }
+}
